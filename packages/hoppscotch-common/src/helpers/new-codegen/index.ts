@@ -1,4 +1,4 @@
-import { HTTPSnippet } from "httpsnippet"
+import { HTTPSnippet } from "@hoppscotch/httpsnippet"
 import { HoppRESTRequest } from "@hoppscotch/data"
 import * as O from "fp-ts/Option"
 import * as E from "fp-ts/Either"
@@ -155,6 +155,12 @@ export const CodegenDefinitions = [
     lang: "ruby",
     mode: "native",
     caption: "Ruby - Ruby Native",
+  },
+  {
+    name: "rust-reqwest",
+    lang: "rust",
+    mode: "reqwest",
+    caption: "Rust - Reqwest",
   },
   {
     name: "shell-curl",

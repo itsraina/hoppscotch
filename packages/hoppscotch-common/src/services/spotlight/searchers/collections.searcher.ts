@@ -325,6 +325,7 @@ export class CollectionsSpotlightSearcherService
 
         this.restTab.createNewTab(
           {
+            type: "request",
             request: req,
             isDirty: false,
             saveContext: {
@@ -359,6 +360,7 @@ export class CollectionsSpotlightSearcherService
           folderPath: folderPath.join("/"),
           requestIndex: reqIndex,
         },
+        cursorPosition: 0,
         request: req,
         isDirty: false,
         inheritedProperties: {

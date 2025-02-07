@@ -64,6 +64,7 @@ export default defineConfig({
       "@lib": path.resolve(__dirname, "./src/lib"),
       stream: "stream-browserify",
       util: "util",
+      querystring: "qs",
     },
     dedupe: ["vue"],
   },
@@ -108,6 +109,7 @@ export default defineConfig({
       dts: "../hoppscotch-common/src/components.d.ts",
       dirs: [
         "../hoppscotch-common/src/components",
+        "./src/components"
       ],
       directoryAsNamespace: true,
       resolvers: [
